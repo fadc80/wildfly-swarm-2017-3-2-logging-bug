@@ -1,0 +1,16 @@
+# This is the default properties
+swarm:
+  logging:
+    pattern-formatters:
+      MY_COLOR_PATTERN:
+        pattern: "%K{level}%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p (%t) [%c.%M()] %s%e%n"
+      MY_PATTERN:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p (%t) [%c.%M()] %s%e%n"
+    console-handlers:
+      MY_CONSOLE:
+        level: DEBUG
+        named-formatter: MY_COLOR_PATTERN
+    root-logger:
+      level: DEBUG
+      handlers:
+          - MY_CONSOLE
