@@ -1,2 +1,2 @@
 # Run
->$ clean package wildfly-swarm:run
+>$ mvn clean package wildfly-swarm:run
